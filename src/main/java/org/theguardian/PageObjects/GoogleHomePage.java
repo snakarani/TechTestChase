@@ -27,7 +27,6 @@ public class GoogleHomePage extends Utils {
 
         String[] firstNewsText = firstNewsHeadline.split(" ");
         List<WebElement> linkForResults = driver.findElements(_resultsSource);
-         int noOfArticle = 0;
 
         boolean result = false;
         for (int i = 0; i < linkForResults.size()-3; i++) {

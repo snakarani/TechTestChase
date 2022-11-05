@@ -41,5 +41,4 @@ public class Hooks extends Utils {
         }
         driver.quit();
     }
-
 }
