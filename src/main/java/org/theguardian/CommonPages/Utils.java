@@ -1,12 +1,9 @@
 package org.theguardian.CommonPages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -15,7 +12,7 @@ import java.util.Date;
 public class Utils extends BasePage {
     //method for clickOnElement
     public static void clickOnElement(By by) {
-        driver.findElement(by).click();
+        driver.findElement( by).click();
     }
     //method for enterText
     public static void enterText(By by, String text) {
@@ -43,11 +40,11 @@ public class Utils extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(seconds));
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
-    public static String getText(By by) {
-        String text = driver.findElement(by).getText();
-        System.out.println(text);
-        return text;
-    }
+//    public static String getText(By by) {
+//        String text = driver.findElement(by).getText();
+//        System.out.println(text);
+//        return text;
+//    }
     //Checking WebElement displayed or not
     public static boolean isElementPresent(By by) {
         try {

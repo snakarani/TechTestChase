@@ -9,7 +9,7 @@ public class LoadProperty {
     static String fileLocation = "src/test/resources/TestData/config.properties";
     public String getProperty(String keyName){
         prop = new Properties();
-        //try and catch block
+        //Handling exceptions with try and catch block
         try {
             input = new FileInputStream(fileLocation);
             prop.load(input);

@@ -6,9 +6,9 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Features/",
+@CucumberOptions(features = ".",
         tags = "@news",monochrome = true,
-       glue = {"org.theguardian.StepDefinitions"},
+       //glue = {"org.theguardian.StepDefinitions"},
         plugin = {"pretty","html:html","json:json/cucumber.json","junit:junit/cucumber.xml"},
         dryRun = false
 )
