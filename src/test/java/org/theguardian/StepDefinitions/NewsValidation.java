@@ -18,7 +18,6 @@ public class NewsValidation {
 
     @Given("^user is on home page of The Guardian$")
     public void user_is_on_home_page_of_The_Guardian() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
         theGuardianHomePage.acceptCookies();
     }
 
