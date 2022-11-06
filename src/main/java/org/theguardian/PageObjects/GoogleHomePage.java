@@ -41,7 +41,7 @@ public class GoogleHomePage extends Utils {
         int count= 0;
         boolean result = false;
         try {
-            for (int i = 0; i < linkForResults.size(); i++) {
+            for (int i = 0; i < linkForResults.size()-3; i++) {
 
                 if (!linkForResults.get(i).getText().contains(loadProperty.getProperty("theGuardian_url"))) {
                     for (String keyWord : firstNewsText) {
